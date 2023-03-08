@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website name -->
+    <title>Taguig City University</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Website icon -->
+    <link rel="icon" href="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/cropped-tcu1-2-32x32.png" sizes="32x32"/>
+    <link rel="icon" href="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/cropped-tcu1-2-192x192.png" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/cropped-tcu1-2-180x180.png"/>
+    <meta name="msapplication-TileImage" content="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/cropped-tcu1-2-270x270.png"/>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/admin.html">
+                <div class="navbar__logo">
+                    <img width="300" height="64.29" src="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/tcu-logo-300x64.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/tcu-logo-300x64.png 300w, https://tcu.taguig.gov.ph/wp-content/uploads/2020/08/tcu-logo.png 700w" sizes="(max-width: 300px) 100vw, 300px">
+                </div>
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/admin.html" class="navbar__links" id="current"> Admin </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/admin-login.html" class="navbar__links"> Log Out </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Admin Section  -->
+    <div class="admin">
+
+        <div class="admin__event">
+
+            <!-- Calendar & Event -->
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">February</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><</pre>
+                        </span>
+                        <span id="year">2021</span>
+                        <span class="year-change" id="next-year">
+                            <pre>></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="calendar-footer">
+                    <div class="toggle">
+                        <!-- <span>Dark Mode</span> -->
+                        <!-- <div class="dark-mode-switch">
+                            <div class="dark-mode-switch-ident"></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="month-list"></div>
+            </div>
+
+            <div class="event__container">
+                <div class="container2">
+                    <div class="content2">
+    
+                      <h1>Add Event</h1>
+                      <form action="/admin.html">
+                        <div class="user-details2">
+                          <div class="input-box2">
+                            <span class="details2">Event Description</span>
+                            <input type="text2" placeholder="Enter event description" required>
+                          </div>
+                          <div class="input-box2">
+                            <span class="details2">Date of Event</span>
+                            <!-- <input type="text2" placeholder="mm/dd/yy" required> -->
+                            <input class="form-control" type="date" placeholder="Select Date" required>
+                          </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Add">
+                        </div>
+                      </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="admin__container">
+            <div class="admin__table">
+                <table class="content-table">
+                    <thead class="headt">
+                    <tr>
+                        <th>Full&nbsp;Name</th>
+                        <th>Affiliation</th>
+                        <th>Section</th>
+                        <th>Strand/Course</th>
+                        <th>Learner's&nbsp;Reference&nbsp;Number</th>
+                        <th>Student&nbsp;Number</th>
+                        <th>Academic&nbsp;Year</th>
+                        <th>Adviser</th>
+                        <th>Email</th>
+                        <th>Document&nbsp;Type</th>
+                        <th>Requisition&nbsp;Date</th>
+                        <th>Receiving&nbsp;Date</th>
+                        <th>Time&nbsp;Slot</th>
+                    </tr>
+                    </thead>
+                    <tbody class="bodyt">
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Panaligan,&nbsp;Russel&nbsp;T.</td>
+                        <td>Teacher</td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>2021-2022</td>
+                        <td>None</td>
+                        <td>panaliganrussel@gmail.com</td>
+                        <td>TOR</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    <tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    </tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+                    </tr>
+                        <td>Parañal,&nbsp;Timmy&nbsp;D.</td>
+                        <td>Student</td>
+                        <td>12 A</td>
+                        <td>STEM P-TECH</td>
+                        <td>136887150049</td>
+                        <td>00015-shs</td>
+                        <td>2021-2022</td>
+                        <td>Noel&nbsp;Rico</td>
+                        <td>paranaltimmy@gmail.com</td>
+                        <td>COE</td>
+                        <td>07/04/22</td>
+                        <td>07/05/22</td>
+                        <td>10:00&nbsp;am&nbsp;-&nbsp;11:00&nbsp;am</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="admin__table1">
+
+                <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRV4Jm7PXwzjHPuS1Hj2X1LhC9h1QyKBzOG0HiJpCMeSre9awVaxcru6qevjjYcvjq0Yv4KiGRV3Lti/pubhtml?gid=1976397172&amp;single=true&amp;widget=true&amp;headers=false">
+                </iframe> -->
+
+                <div class="table__settings">
+                    
+                    <div class="button">
+                        <input type="submit" value="Edit Table">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Select">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Delete">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Undo">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Save">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Download">
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
